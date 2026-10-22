@@ -444,7 +444,7 @@ all_results <- purrr::map_dfr(sample_sizes, ~ run_sim(.x, rep_id))
 saveRDS(
   all_results,
   file = paste0(
-    "/gpfs/home/xz2535/transport_mediator/result/sim_job_",
+    "/gpfs/home/userid/transport_mediator/result/sim_job_",
     Sys.getenv("SLURM_ARRAY_JOB_ID"),
     "_rep_",
     rep_id,
